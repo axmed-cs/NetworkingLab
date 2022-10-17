@@ -25,4 +25,52 @@ public class VehicleResponse implements Serializable {
                 + numberOfSeats + " seats, " + numberOfDoors + " doors, and the cost is " + price + ". "
                 + "This Vehicle has these options: " + Arrays.toString(options) + ".";
     }
+
+    public VehicleRequest getRequest() {
+        return request;
+    }
+
+    public void setRequest(VehicleRequest request) {
+        this.request = request;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getNumberOfDoors() {
+        return numberOfDoors;
+    }
+
+    public void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }
+
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    public int getMilesOnVehicle() {
+        return milesOnVehicle;
+    }
+
+    public void setMilesOnVehicle(int milesOnVehicle) {
+        this.milesOnVehicle = milesOnVehicle;
+    }
+
+    public String[] getOptions() {
+        return options;
+    }
+
+    public void setOptions(String[] options) {
+        this.options = options;
+    }
 }
