@@ -22,7 +22,7 @@ public class Client {
         //InStream to receive serialized VehicleResponse
         ObjectInputStream inStream = new ObjectInputStream(s.getInputStream());
 
-        //reads object from InStream and makes into new vehicle response
+        //reads object from InStream (deserializes it) and makes into new vehicle response
         VehicleResponse receiveResponse = (VehicleResponse)inStream.readObject();
 
         //response received confirmation
